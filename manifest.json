@@ -1,0 +1,32 @@
+{
+  "name": "qidizi工具集",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "翻译",
+  "offline_enabled": false,
+  "icons": {
+    "128": "icon.png"
+  },
+  "author": "qidizi",
+  "homepage_url": "https://qidizi.github.io/",
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "docker.js",
+      "bg/common.js",
+      "bg/translate.js"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "background",
+    "tabs",
+    "storage",
+    "<all_urls>"
+  ],
+  "options_ui": {
+    "page": "option/option.html",
+    "chrome_style": true
+  },
+  "minimum_chrome_version": "75.0.3770.142"
+}
