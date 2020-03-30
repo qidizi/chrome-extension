@@ -1,7 +1,7 @@
 // 翻译功能后台js
 docker.browser.tabs.onUpdated.addListener(function (tid, change, ext) {
     // 加载中/完成状态，才注入
-    console.log(change.status, tid, ext.url)
+    //console.log(change.status, tid, ext.url)
     if (
         '.loading.complete.'.indexOf("." + change.status + '.') > -1
         ||

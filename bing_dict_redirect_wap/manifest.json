@@ -1,0 +1,22 @@
+{
+  "name": "bing词典网页使用手机版",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "把bing词典查询页面重定向到wap版本",
+  "offline_enabled": false,
+  "author": "qidizi",
+  "homepage_url": "https://qidizi.github.io/",
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "bg.js"
+    ]
+  },
+  "permissions": [
+    "background",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "minimum_chrome_version": "75.0.3770.142"
+}

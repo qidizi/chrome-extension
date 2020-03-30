@@ -13,7 +13,6 @@
     "persistent": false,
     "scripts": [
       "docker.js",
-      "bg/common.js",
       "bg/translate.js"
     ]
   },
