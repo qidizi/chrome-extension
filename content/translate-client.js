@@ -28,6 +28,7 @@
 
         if (text.length >= 300) {
             // 字数过多也不翻译
+            console.log('选择的英文过长，不支持');
             return;
         }
 
@@ -500,14 +501,14 @@
         _.shower.innerHTML = '<style> \
 .chromeQidiziTranslatePanel{ \
 position:fixed; \
-left:0; \
+right:0; \
 bottom:30px; \
 z-index:999999999999999; \
-max-height:100%; \
-max-width:100%; \
+max-height:200px; \
+max-width:200px; \
 font-size:12px; \
 overflow:auto; \
-white-space:nowrap; \
+white-space:normal; \
 display:none; \
 } \
 .chromeQidiziTranslatePanel *{font-size:12px!important;color:black!important;} \
