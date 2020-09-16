@@ -5,6 +5,18 @@ docker.browser.tabs.onUpdated.addListener(function (tid, change, ext) {
     if ('.loading.complete.'.indexOf("." + change.status + '.') > -1)
         return;
 
+    console.log(change, ext)
+    //// 因为无法访问到该变量域
+    // if (/^\w+:\/+([\w-]*\.)+qmth\.com\.cn(:\d+)?\//.test(ext.url)) {
+    //     // 注入到启明考试
+    //     docker.browser.tabs.executeScript(tid, {
+    //         file: '/content/test-qmks.js',
+    //         // 只插入到main 框架
+    //         allFrames: false,
+    //         runAt: 'document_start'
+    //     });
+    // }
+
     docker.storage_local_get(docker.storage_keys.translate_on, (res) => {
         // 未启用
         if (!res.translate_on) return;
